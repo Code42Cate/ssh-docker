@@ -1,6 +1,6 @@
 FROM debian:latest
 
-RUN apt-get update && apt-get install -y openssh-server
+RUN apt-get update && apt-get install -y openssh-server iputils-ping
 RUN mkdir /var/run/sshd
 
 ARG ROOT_PASSWORD
